@@ -1,0 +1,80 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{\numberline {1}Unidad I: Funciones y Límites}{6}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Funciones}{6}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Historia}{6}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Propiedades Fundamentales de las Funciones}{7}{subsection.1.1.2}%
+\contentsline {subsubsection}{Unicidad}{7}{subsubsection*.1}%
+\contentsline {subsubsection}{Existencia y Unicidad de la Función}{7}{subsubsection*.2}%
+\contentsline {subsubsection}{Imagen y Pre-imagen}{7}{subsubsection*.3}%
+\contentsline {subsection}{\numberline {1.1.3}Aplicaciones de las Funciones}{7}{subsection.1.1.3}%
+\contentsline {section}{\numberline {1.2}Dominio}{8}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Definición Formal del Dominio}{8}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Ejemplos de Restricciones en el Dominio}{8}{subsection.1.2.2}%
+\contentsline {subsubsection}{División por cero}{8}{subsubsection*.4}%
+\contentsline {subsubsection}{Raíces de números negativos}{9}{subsubsection*.5}%
+\contentsline {subsubsection}{Logaritmos}{9}{subsubsection*.6}%
+\contentsline {subsection}{\numberline {1.2.3}Dominio de Funciones Compuestas}{9}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Rango}{9}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Definición Formal del Rango}{9}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Ejemplos de Determinación del Rango}{10}{subsection.1.3.2}%
+\contentsline {subsubsection}{Función cuadrática}{10}{subsubsection*.7}%
+\contentsline {subsubsection}{Función lineal}{10}{subsubsection*.8}%
+\contentsline {subsubsection}{Función seno}{10}{subsubsection*.9}%
+\contentsline {subsubsection}{Función logaritmo}{10}{subsubsection*.10}%
+\contentsline {subsection}{\numberline {1.3.3}Cálculo del Rango de Funciones Compuestas}{10}{subsection.1.3.3}%
+\contentsline {section}{\numberline {1.4}Funciones Explícitas}{11}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Aplicaciones de las Funciones Explícitas}{11}{subsection.1.4.1}%
+\contentsline {section}{\numberline {1.5}Funciones Implícitas}{12}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Aplicaciones de las Funciones Implícitas}{12}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Derivación Implícita}{12}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}Teorema de la Función Implícita}{13}{subsection.1.5.3}%
+\contentsline {section}{\numberline {1.6}Curvas de Nivel}{13}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Definición Formal}{14}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}Aplicaciones}{14}{subsection.1.6.2}%
+\contentsline {subsection}{\numberline {1.6.3}Ejemplos}{14}{subsection.1.6.3}%
+\contentsline {subsection}{\numberline {1.6.4}Relación con el Gradiente}{15}{subsection.1.6.4}%
+\contentsline {section}{\numberline {1.7}Límites}{15}{section.1.7}%
+\contentsline {subsection}{\numberline {1.7.1}Definición Formal}{15}{subsection.1.7.1}%
+\contentsline {subsection}{\numberline {1.7.2}Interpretación Intuitiva}{16}{subsection.1.7.2}%
+\contentsline {subsection}{\numberline {1.7.3}Límites en Funciones de Varias Variables}{16}{subsection.1.7.3}%
+\contentsline {subsection}{\numberline {1.7.4}Importancia de los Límites}{17}{subsection.1.7.4}%
+\contentsline {subsection}{\numberline {1.7.5}Límites al Infinito y Comportamiento Asintótico}{17}{subsection.1.7.5}%
+\contentsline {subsection}{\numberline {1.7.6}Síntesis}{17}{subsection.1.7.6}%
+\contentsline {chapter}{\numberline {2}Unidad II: Derivadas Parciales}{18}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Derivadas Parciales de Primer Orden}{18}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Definición y Concepto}{18}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Interpretación Geométrica}{19}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Notación}{19}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Ejemplo 1: Cálculo de Derivadas Parciales de Primer Orden}{19}{subsection.2.1.4}%
+\contentsline {section}{\numberline {2.2}Derivadas Parciales de Segundo Orden}{21}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Definición y Tipos}{21}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Teorema de Schwarz (Igualdad de las Derivadas Mixtas)}{22}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Interpretación y Aplicaciones}{22}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Ejemplo 2: Cálculo de Derivadas Parciales de Segundo Orden}{22}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Reglas de Derivación}{24}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Regla de la Potencia}{24}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Regla del Producto}{25}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Regla de la Cadena}{25}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Regla del Cociente}{26}{subsection.2.3.4}%
+\contentsline {section}{\numberline {2.4}Historia de las Derivadas Parciales}{26}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Orígenes del Cálculo Multivariable}{26}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Desarrollo en el Siglo XVIII}{27}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Consolidación de la Notación}{27}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Formalización en el Siglo XIX}{27}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Siglo XX y Aplicaciones Modernas}{28}{subsection.2.4.5}%
+\contentsline {section}{\numberline {2.5}Aplicaciones}{28}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Física e Ingeniería}{28}{subsection.2.5.1}%
+\contentsline {subsubsection}{Transferencia de Calor}{28}{subsubsection*.11}%
+\contentsline {subsubsection}{Mecánica de Fluidos}{29}{subsubsection*.12}%
+\contentsline {subsubsection}{Electromagnetismo}{29}{subsubsection*.13}%
+\contentsline {subsection}{\numberline {2.5.2}Geometría y Topografía}{29}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Economía y Finanzas}{30}{subsection.2.5.3}%
+\contentsline {subsubsection}{Teoría del Consumidor}{30}{subsubsection*.14}%
+\contentsline {subsubsection}{Ecuación de Black-Scholes}{30}{subsubsection*.15}%
+\contentsline {subsection}{\numberline {2.5.4}Inteligencia Artificial y Machine Learning}{31}{subsection.2.5.4}%
+\contentsline {subsubsection}{Redes Neuronales y Retropropagación}{31}{subsubsection*.16}%
+\contentsline {subsubsection}{Optimización}{31}{subsubsection*.17}%
+\contentsline {subsection}{\numberline {2.5.5}Visión por Computadora}{32}{subsection.2.5.5}%
+\contentsline {subsection}{\numberline {2.5.6}Biología y Medicina}{32}{subsection.2.5.6}%
+\contentsline {subsection}{\numberline {2.5.7}Síntesis}{32}{subsection.2.5.7}%
+\contentsline {chapter}{\numberline {3}Unidad III}{33}{chapter.3}%
