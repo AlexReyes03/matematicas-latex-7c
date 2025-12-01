@@ -77,4 +77,5 @@
 \contentsline {subsection}{\numberline {2.5.5}Visión por Computadora}{32}{subsection.2.5.5}%
 \contentsline {subsection}{\numberline {2.5.6}Biología y Medicina}{32}{subsection.2.5.6}%
 \contentsline {subsection}{\numberline {2.5.7}Síntesis}{32}{subsection.2.5.7}%
-\contentsline {chapter}{\numberline {3}Unidad III}{33}{chapter.3}%
+\contentsline {subsection}{\numberline {2.5.8}Ejercicios}{33}{subsection.2.5.8}%
+\contentsline {chapter}{\numberline {3}Unidad III}{48}{chapter.3}%

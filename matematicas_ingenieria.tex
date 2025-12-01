@@ -1326,6 +1326,977 @@ Las aplicaciones de las derivadas parciales son prácticamente ilimitadas en la 
 
 % ==================== UNIDAD III ====================
 \chapter{Unidad III: Integrales}
+\subsection{Ejercicios}
+
+% ============================================
+%  EJERCICIOS DE DERIVADAS PARCIALES – PRIMER ORDEN
+% ============================================
+
+% ============================================================
+\subsection*{Derivadas Parciales de Primer Orden}
+
+% ============================================================
+\subsection*{Ejercicio 1}
+Sea:
+\[
+f(x,y)=x^2 + 3xy + y^2 + 5
+\]
+
+% -----------------------------------------
+\subsubsection*{Derivada respecto a $x$}
+
+\[
+\frac{\partial}{\partial x}(x^2)=2x
+\]
+
+\[
+\frac{\partial}{\partial x}(3xy)=3y
+\]
+
+\[
+\frac{\partial}{\partial x}(y^2)=0
+\]
+
+\[
+\frac{\partial}{\partial x}(5)=0
+\]
+
+\[
+\boxed{\frac{\partial f}{\partial x}=2x+3y}
+\]
+
+% -----------------------------------------
+\subsubsection*{Derivada respecto a $y$}
+
+\[
+\frac{\partial}{\partial y}(x^2)=0
+\]
+
+\[
+\frac{\partial}{\partial y}(3xy)=3x
+\]
+
+\[
+\frac{\partial}{\partial y}(y^2)=2y
+\]
+
+\[
+\frac{\partial}{\partial y}(5)=0
+\]
+
+\[
+\boxed{\frac{\partial f}{\partial y}=3x+2y}
+\]
+
+% ============================================================
+\subsection*{Ejercicio 2}
+Sea:
+\[
+f(x,y)=e^{\,2x^2 + xy + y^2}
+\]
+
+% -----------------------------------------
+\subsubsection*{Derivada respecto a $x$}
+
+\[
+\frac{\partial}{\partial x}(2x^2)=4x
+\]
+
+\[
+\frac{\partial}{\partial x}(xy)=y
+\]
+
+\[
+\frac{\partial}{\partial x}(y^2)=0
+\]
+
+\[
+\boxed{\frac{\partial f}{\partial x}=(4x+y)e^{\,2x^2 + xy + y^2}}
+\]
+
+% -----------------------------------------
+\subsubsection*{Derivada respecto a $y$}
+
+\[
+\frac{\partial}{\partial y}(2x^2)=0
+\]
+
+\[
+\frac{\partial}{\partial y}(xy)=x
+\]
+
+\[
+\frac{\partial}{\partial y}(y^2)=2y
+\]
+
+\[
+\boxed{\frac{\partial f}{\partial y}=(x+2y)e^{\,2x^2 + xy + y^2}}
+\]
+
+% ============================================================
+\subsection*{Ejercicio 3}
+Sea:
+\[
+f(x,y)=\sin(3x + 2y^2)
+\]
+
+% -----------------------------------------
+\subsubsection*{Derivada respecto a $x$}
+
+\[
+\frac{\partial}{\partial x}(3x)=3
+\]
+
+\[
+\frac{\partial}{\partial x}(2y^2)=0
+\]
+
+\[
+\boxed{\frac{\partial f}{\partial x}=3\cos(3x+2y^2)}
+\]
+
+% -----------------------------------------
+\subsubsection*{Derivada respecto a $y$}
+
+\[
+\frac{\partial}{\partial y}(3x)=0
+\]
+
+\[
+\frac{\partial}{\partial y}(2y^2)=4y
+\]
+
+\[
+\boxed{\frac{\partial f}{\partial y}=4y\cos(3x+2y^2)}
+\]
+
+% ============================================================
+\subsection*{Ejercicio 4}
+Sea:
+\[
+f(x,y) = x^3 + y^5 - 3x^2 y
+\]
+
+% -----------------------------------------
+\subsubsection*{Derivada respecto a $x$}
+
+\[
+\frac{\partial}{\partial x}(x^3)=3x^2
+\]
+
+\[
+\frac{\partial}{\partial x}(y^5)=0
+\]
+
+\[
+\frac{\partial}{\partial x}(-3x^2 y)=-6xy
+\]
+
+\[
+\boxed{\frac{\partial f}{\partial x}=3x^2 - 6xy}
+\]
+
+% -----------------------------------------
+\subsubsection*{Derivada respecto a $y$}
+
+\[
+\frac{\partial}{\partial y}(x^3)=0
+\]
+
+\[
+\frac{\partial}{\partial y}(y^5)=5y^4
+\]
+
+\[
+\frac{\partial}{\partial y}(-3x^2 y)=-3x^2
+\]
+
+\[
+\boxed{\frac{\partial f}{\partial y}=5y^4 - 3x^2}
+\]
+
+% ============================================================
+\subsection*{Ejercicio 5}
+Sea:
+\[
+f(x,y)=\frac{x^4 y^3}{6}-\frac{2xy^6}{3}
+\]
+
+% -----------------------------------------
+\subsubsection*{Derivada respecto a $x$}
+
+\[
+\frac{\partial}{\partial x}\left(\frac{x^4 y^3}{6}\right)=\frac{4x^3 y^3}{6}
+\]
+
+\[
+\frac{\partial}{\partial x}\left(\frac{2xy^6}{3}\right)=\frac{2y^6}{3}
+\]
+
+\[
+\boxed{\frac{\partial f}{\partial x}=\frac{4x^3 y^3}{6}-\frac{2y^6}{3}}
+\]
+
+% -----------------------------------------
+\subsubsection*{Derivada respecto a $y$}
+
+\[
+\frac{\partial}{\partial y}\left(\frac{x^4 y^3}{6}\right)=\frac{3x^4 y^2}{6}
+= \frac{1}{2}x^4 y^2
+\]
+
+\[
+\frac{\partial}{\partial y}\left(\frac{2xy^6}{3}\right)=4xy^5
+\]
+
+\[
+\boxed{\frac{\partial f}{\partial y}=\frac{1}{2}x^4 y^2 - 4xy^5}
+\]
+
+% ============================================================
+\subsection*{Ejercicio 6}
+Sea:
+\[
+f(x,y)=6x^2\cos(y^3)
+\]
+
+% -----------------------------------------
+\subsubsection*{Derivada respecto a $x$}
+
+\[
+\frac{\partial}{\partial x}(6x^2)=12x
+\]
+
+\[
+\boxed{\frac{\partial f}{\partial x}=12x\cos(y^3)}
+\]
+
+% -----------------------------------------
+\subsubsection*{Derivada respecto a $y$}
+
+\[
+\frac{\partial}{\partial y}(\cos(y^3))
+= -\sin(y^3)\cdot 3y^2
+\]
+
+\[
+\boxed{\frac{\partial f}{\partial y}
+= -18x^2 y^2 \sin(y^3)}
+\]
+
+% ============================================================
+\subsection*{Ejercicio 7}
+Sea:
+\[
+f(x,y) = (5x^2 + 3xy - y^3)^5
+\]
+
+Definimos:
+\[
+u = 5x^2 + 3xy - y^3
+\]
+
+% -----------------------------------------
+\subsubsection*{Derivada respecto a $x$}
+
+\[
+\frac{\partial f}{\partial x}
+= 5u^{4}(10x + 3y)
+\]
+
+\[
+\boxed{
+\frac{\partial f}{\partial x}
+= 5(5x^2 + 3xy - y^3)^4 (10x + 3y)
+}
+\]
+
+% -----------------------------------------
+\subsubsection*{Derivada respecto a $y$}
+
+\[
+\frac{\partial u}{\partial y}
+= 3x - 3y^2
+\]
+
+\[
+\frac{\partial f}{\partial y}
+= 5u^{4}(3x - 3y^2)
+\]
+
+\[
+\boxed{
+\frac{\partial f}{\partial y}
+= 5(5x^2 + 3xy - y^3)^4 (3x - 3y^2)
+}
+\]
+
+% =====================================================
+\subsection*{Derivadas Parciales de Segundo Orden}
+% =====================================================
+
+% =====================================================
+\subsection*{Ejercicio 1}
+\( f(x,y)=\dfrac{x^4 y^3}{6}-\dfrac{2xy^6}{3} \)
+
+% --- Parcial respecto a x ---
+\[
+\frac{\partial}{\partial x}\left(\frac{x^4 y^3}{6}\right)
+= \frac{4x^3 y^3}{6}
+\]
+
+\[
+\frac{\partial}{\partial x}\left(\frac{2xy^6}{3}\right)
+= \frac{2y^6}{3}
+\]
+
+\[
+\boxed{
+\frac{\partial f}{\partial x}
+= \frac{4x^3 y^3}{6} - \frac{2y^6}{3}
+}
+\]
+
+% --- Parcial respecto a y ---
+\[
+\frac{\partial}{\partial y}\left(\frac{x^4 y^3}{6}\right)
+= \frac{3x^4 y^2}{6}
+= \frac{1}{2}x^4 y^2
+\]
+
+\[
+\frac{\partial}{\partial y}\left(\frac{2xy^6}{3}\right)
+= 4xy^5
+\]
+
+\[
+\boxed{
+\frac{\partial f}{\partial y}
+= \frac{1}{2}x^4 y^2 - 4xy^5
+}
+\]
+
+% --- Segunda derivada respecto a x ---
+\[
+\frac{\partial}{\partial x}\left(\frac{4x^3 y^3}{6}\right)
+= \frac{12x^2 y^3}{6}
+= 2x^2 y^3
+\]
+
+\[
+\frac{\partial}{\partial x}\left(\frac{2y^6}{3}\right)=0
+\]
+
+\[
+\boxed{
+\frac{\partial^2 f}{\partial x^2} = 2x^2 y^3
+}
+\]
+
+% --- Segunda derivada respecto a y ---
+\[
+\frac{\partial}{\partial y}\left(\frac{1}{2}x^4 y^2\right)
+= x^4 y
+\]
+
+\[
+\frac{\partial}{\partial y}(4xy^5)
+= 20xy^4
+\]
+
+\[
+\boxed{
+\frac{\partial^2 f}{\partial y^2} = x^4 y - 20xy^4
+}
+\]
+
+% --- Parcial mixta xy ---
+\[
+\frac{\partial}{\partial y}\left(\frac{4x^3 y^3}{6}\right)
+= \frac{12x^3 y^2}{6}
+= 2x^3 y^2
+\]
+
+\[
+\frac{\partial}{\partial y}\left(\frac{-2y^6}{3}\right)
+= -4y^5
+\]
+
+\[
+\boxed{
+\frac{\partial^2 f}{\partial y\partial x}
+= 2x^3 y^2 - 4y^5
+}
+\]
+
+% --- Parcial mixta yx ---
+\[
+\frac{\partial}{\partial x}\left(\frac{1}{2}x^4 y^2\right)
+= 2x^3 y^2
+\]
+
+\[
+\frac{\partial}{\partial x}(-4xy^5)
+= -4y^5
+\]
+
+\[
+\boxed{
+\frac{\partial^2 f}{\partial x\partial y}
+= 2x^3 y^2 - 4y^5
+}
+\]
+
+% =====================================================
+\subsection*{Ejercicio 2}
+\( f(x,y)=6x^2\cos(y^3) \)
+
+% --- df/dx ---
+\[
+\frac{\partial}{\partial x}(6x^2)=12x
+\]
+
+\[
+\boxed{
+\frac{\partial f}{\partial x}=12x\cos(y^3)
+}
+\]
+
+% --- df/dy ---
+\[
+\frac{\partial}{\partial y}(\cos(y^3))
+=-\sin(y^3)\cdot 3y^2
+\]
+
+\[
+\boxed{
+\frac{\partial f}{\partial y}
+= -18x^2 y^2 \sin(y^3)
+}
+\]
+
+% --- d2f/dx2 ---
+\[
+\frac{\partial}{\partial x}(12x\cos(y^3))
+= 12\cos(y^3)
+\]
+
+\[
+\boxed{
+\frac{\partial^2 f}{\partial x^2}=12\cos(y^3)
+}
+\]
+
+% --- d2f/dy2 ---
+\[
+\frac{\partial}{\partial y}\left(-18x^2 y^2\sin(y^3)\right)
+= -18x^2\left(2y\sin(y^3)+y^2\cos(y^3)\cdot 3y^2\right)
+\]
+
+\[
+\boxed{
+\frac{\partial^2 f}{\partial y^2}
+= -36x^2 y\sin(y^3) - 54x^2 y^4 \cos(y^3)
+}
+\]
+
+% --- d2f/dxdy ---
+\[
+\frac{\partial}{\partial y}(12x\cos(y^3))
+= 12x(-\sin(y^3)\cdot 3y^2)
+\]
+
+\[
+\boxed{
+\frac{\partial^2 f}{\partial y\partial x}
+= -36xy^2 \sin(y^3)
+}
+\]
+
+% --- d2f/dydx ---
+\[
+\frac{\partial}{\partial x}(-18x^2 y^2\sin(y^3))
+= -36xy^2\sin(y^3)
+\]
+
+\[
+\boxed{
+\frac{\partial^2 f}{\partial x\partial y}
+= -36xy^2\sin(y^3)
+}
+\]
+
+% ============================================================
+\subsection*{Ejercicio 3}
+Sea la función:
+\[
+f(x,y)=\cos(x^4 + y^7)
+\]
+
+% ============================================================
+\subsubsection*{Primera derivada respecto a $x$}
+
+\[
+\frac{\partial f}{\partial x}
+= -\sin(x^4 + y^7)\cdot 4x^3
+\]
+
+\[
+= -4x^3 \sin(x^4 + y^7)
+\]
+
+% ============================================================
+\subsubsection*{Segunda derivada respecto a $x$}
+
+Aplicamos regla del producto:
+
+\[
+\frac{\partial^2 f}{\partial x^2}
+= -12x^2 \sin(x^4 + y^7)
+- 6x^6 \cos(x^4 + y^7)
+\]
+
+\[
+\boxed{
+\frac{\partial^2 f}{\partial x^2}
+= -12x^2 \sin(x^4 + y^7)
+- 6x^6 \cos(x^4 + y^7)
+}
+\]
+
+% ============================================================
+\subsubsection*{Primera derivada respecto a $y$}
+
+\[
+\frac{\partial f}{\partial y}
+= -\sin(x^4 + y^7)\cdot 7y^6
+\]
+
+\[
+= -7y^6 \sin(x^4 + y^7)
+\]
+
+% ============================================================
+\subsubsection*{Segunda derivada mixta $\frac{\partial^2 f}{\partial x\partial y}$}
+
+\[
+\frac{\partial^2 f}{\partial x\partial y}
+= -4x^3 \cos(x^4 + y^7)\cdot 7y^6
+\]
+
+\[
+= -28 x^3 y^6 \cos(x^4 + y^7)
+\]
+
+\[
+\boxed{
+\frac{\partial^2 f}{\partial x\partial y}
+= -28 x^3 y^6 \cos(x^4 + y^7)
+}
+\]
+
+% ============================================================
+\subsubsection*{Segunda derivada mixta $\frac{\partial^2 f}{\partial y\partial x}$}
+
+\[
+\frac{\partial^2 f}{\partial y\partial x}
+= -7y^6 \cos(x^4 + y^7)\cdot 4x^3
+\]
+
+\[
+= -28 x^3 y^6 \cos(x^4 + y^7)
+\]
+
+\[
+\boxed{
+\frac{\partial^2 f}{\partial y\partial x}
+= -28 x^3 y^6 \cos(x^4 + y^7)
+}
+\]
+
+% ============================================================
+\subsubsection*{Segunda derivada respecto a $y$}
+
+Aplicando producto y regla de la cadena:
+
+\[
+\frac{\partial^2 f}{\partial y^2}
+= -42y^5 \sin(x^4 + y^7)
++ 49y^{12} \cos(x^4 + y^7)
+\]
+
+\[
+\boxed{
+\frac{\partial^2 f}{\partial y^2}
+= -42y^5 \sin(x^4 + y^7)
++ 49y^{12} \cos(x^4 + y^7)
+}
+\]
+
+% =====================================================
+\subsection*{Ejercicio 4}
+\( f(x,y)=(30 - 6x + 2y)(4x - 5) \)
+
+Expande:
+\[
+f(x,y)=120x -150 -24x^2 + 30x + 8xy -10y
+\]
+
+% df/dx
+\[
+\boxed{
+\frac{\partial f}{\partial x}
+= 48x + 150 + 8y
+}
+\]
+
+% df/dy
+\[
+\boxed{
+\frac{\partial f}{\partial y}
+= 8x - 10
+}
+\]
+
+% d2f/dx2
+\[
+\boxed{
+\frac{\partial^2 f}{\partial x^2}=-48
+}
+\]
+
+% d2f/dy2
+\[
+\boxed{
+\frac{\partial^2 f}{\partial y^2}=0
+}
+\]
+
+% d2f/dxdy
+\[
+\boxed{
+\frac{\partial^2 f}{\partial y\partial x}
+= 8
+}
+\]
+
+% d2f/dydx
+\[
+\boxed{
+\frac{\partial^2 f}{\partial x\partial y}
+= 8
+}
+\]
+
+% =====================================================
+\subsection*{Ejercicio 5}
+\( f(x,y)=x^3(4x+5y) \)
+
+\[
+f(x,y)=4x^4 + 5x^3 y
+\]
+
+% df/dx
+\[
+\frac{\partial f}{\partial x}
+= 16x^3 + 15x^2 y
+\]
+
+% df/dy
+\[
+\frac{\partial f}{\partial y}
+= 5x^3
+\]
+
+% d2f/dx2
+\[
+\frac{\partial^2 f}{\partial x^2}
+= 48x^2 + 30xy
+\]
+
+% d2f/dy2
+\[
+\frac{\partial^2 f}{\partial y^2}=0
+\]
+
+% d2f/dxdy
+\[
+\frac{\partial^2 f}{\partial y\partial x}
+= 15x^2
+\]
+
+% d2f/dydx
+\[
+\frac{\partial^2 f}{\partial x\partial y}
+= 15x^2
+\]
+
+% =====================================================
+\subsection*{Ejercicio 6}
+\( f(x,y)=y^4(2x+3y) \)
+
+\[
+f(x,y)=2xy^4 + 3y^5
+\]
+
+% df/dx
+\[
+\frac{\partial f}{\partial x}=2y^4
+\]
+
+% df/dy
+\[
+\frac{\partial f}{\partial y}
+= 8xy^3 + 15y^4
+\]
+
+% d2f/dx2
+\[
+\frac{\partial^2 f}{\partial x^2}=0
+\]
+
+% d2f/dy2
+\[
+\frac{\partial^2 f}{\partial y^2}
+= 24xy^2 + 60y^3
+\]
+
+% d2f/dxdy
+\[
+\frac{\partial^2 f}{\partial y\partial x}
+= 8y^3
+\]
+
+% d2f/dydx
+\[
+\frac{\partial^2 f}{\partial x\partial y}
+= 8y^3
+\]
+
+% ============================================================
+\subsection*{Ejercicio 7}
+% ============================================================
+
+Sea la función:
+\[
+f(x,y)=\frac{x^2}{x^2 + y^2}
+\]
+
+Definimos:
+\[
+u = x^2, 
+\qquad 
+v = x^2 + y^2
+\]
+
+% ============================================================
+\subsubsection*{Primera derivada respecto a $x$}
+
+Aplicamos regla del cociente:
+\[
+\frac{\partial f}{\partial x}
+= \frac{2x(x^2+y^2) - x^2(2x)}{(x^2+y^2)^2}
+\]
+
+Desarrollamos:
+\[
+2x(x^2+y^2) = 2x^3 + 2xy^2
+\]
+\[
+x^2(2x)=2x^3
+\]
+
+Sustituimos:
+\[
+\frac{\partial f}{\partial x}
+= \frac{2x^3 + 2xy^2 - 2x^3}{(x^2+y^2)^2}
+\]
+
+Eliminamos términos:
+\[
+2x^3 - 2x^3 = 0
+\]
+
+Resultado:
+\[
+\boxed{
+\frac{\partial f}{\partial x}
+= \frac{2x y^2}{(x^2+y^2)^2}
+}
+\]
+
+% ============================================================
+\subsubsection*{Primera derivada respecto a $y$}
+
+Aplicamos regla del cociente:
+\[
+\frac{\partial f}{\partial y}
+= \frac{0(x^2+y^2) - x^2(2y)}{(x^2+y^2)^2}
+\]
+
+Simplificando:
+\[
+\frac{\partial f}{\partial y}
+= -\frac{2x^2 y}{(x^2+y^2)^2}
+\]
+
+\[
+\boxed{
+\frac{\partial f}{\partial y}
+= -\frac{2x^2 y}{(x^2+y^2)^2}
+}
+\]
+
+% ============================================================
+\subsubsection*{Segunda derivada respecto a $x$}
+
+Partimos de:
+\[
+\frac{\partial f}{\partial x}
+= \frac{2xy^2}{(x^2+y^2)^2}
+\]
+
+Sea:
+\[
+u_1 = 2xy^2,
+\qquad
+v_1 = (x^2+y^2)^2
+\]
+
+Aplicamos regla del cociente:
+\[
+\frac{\partial^2 f}{\partial x^2}
+= \frac{(2y^2)(x^2+y^2)^2 - (2xy^2)(2)(x^2+y^2)(2x)}{(x^2+y^2)^4}
+\]
+
+Desarrollando:
+\[
+= \frac{2y^2(x^2+y^2)^2}{(x^2+y^2)^4}
+-
+\frac{8x^2 y^2 (x^2+y^2)}{(x^2+y^2)^4}
+\]
+
+Factorizamos:
+\[
+= \frac{2y^2(x^2+y^2) - 8x^2 y^2}{(x^2+y^2)^3}
+\]
+
+Resultado:
+\[
+\boxed{
+\frac{\partial^2 f}{\partial x^2}
+= -\frac{6x^2 y^2 + 2y^2}{(x^2+y^2)^3}
+}
+\]
+
+% ============================================================
+\subsubsection*{Derivada mixta $\frac{\partial^2 f}{\partial x \partial y}$}
+
+Partimos de:
+\[
+\frac{\partial f}{\partial x}
+= \frac{2xy^2}{(x^2+y^2)^2}
+\]
+
+Aplicamos regla del cociente respecto a $y$:
+\[
+\frac{\partial^2 f}{\partial y\partial x}
+= \frac{
+4xy(x^2+y^2)^2 - (2xy^2)(2)(x^2+y^2)(2y)
+}{(x^2+y^2)^4}
+\]
+
+Desarrollando:
+\[
+= \frac{
+4xy(x^2+y^2)^2 - 8xy^3(x^2+y^2)
+}{(x^2+y^2)^4}
+\]
+
+Simplificando:
+\[
+= \frac{
+4xy(x^2+y^2 - 2y^2)
+}{(x^2+y^2)^3}
+\]
+
+Resultado:
+\[
+\boxed{
+\frac{\partial^2 f}{\partial y\partial x}
+= \frac{4xy(x^2 - y^2)}{(x^2+y^2)^3}
+}
+\]
+
+% ============================================================
+\subsubsection*{Derivada mixta $\frac{\partial^2 f}{\partial y \partial x}$}
+
+Partimos de:
+\[
+\frac{\partial f}{\partial y}
+= -\frac{2x^2 y}{(x^2+y^2)^2}
+\]
+
+Aplicamos regla del cociente respecto a $x$:
+\[
+\frac{\partial^2 f}{\partial x\partial y}
+= \frac{
+(x^2+y^2)^2(-4xy) + 8x^3y(x^2+y^2)
+}{(x^2+y^2)^4}
+\]
+
+Después de factorizar:
+\[
+= 4xy\,\frac{x^2 - y^2}{(x^2+y^2)^3}
+\]
+
+\[
+\boxed{
+\frac{\partial^2 f}{\partial x\partial y}
+= \frac{4xy(x^2 - y^2)}{(x^2+y^2)^3}
+}
+\]
+
+% ============================================================
+\subsubsection*{Segunda derivada respecto a $y$}
+
+Partimos de:
+\[
+\frac{\partial f}{\partial y}
+= -\frac{2x^2 y}{(x^2+y^2)^2}
+\]
+
+Aplicamos regla del cociente:
+\[
+\frac{\partial^2 f}{\partial y^2}
+= \frac{
+(x^2+y^2)^2(-2x^2) - (-2x^2y)(2)(x^2+y^2)(2y)
+}{(x^2+y^2)^4}
+\]
+
+Desarrollando:
+\[
+= \frac{
+-2x^2(x^2+y^2)^2 + 8x^2 y^2(x^2+y^2)
+}{(x^2+y^2)^4}
+\]
+
+Simplificando:
+\[
+= \frac{
+2x^2(3y^2 - x^2)
+}{(x^2+y^2)^3}
+\]
+
+\[
+\boxed{
+\frac{\partial^2 f}{\partial y^2}
+= \frac{2x^2(3y^2 - x^2)}{(x^2+y^2)^3}
+}
+\]
+
+% ==================== UNIDAD III (PLACEHOLDER) ====================
+\chapter{Unidad III}
 
 \section{Integrales Definidas}
 
