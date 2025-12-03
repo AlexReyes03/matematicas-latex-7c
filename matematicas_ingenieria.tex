@@ -3068,6 +3068,310 @@ Las integrales triples tienen aplicaciones fundamentales:
     \item \textbf{Probabilidad:} Funciones de densidad de probabilidad para tres variables aleatorias continuas.
 \end{itemize}
 
+% ==================== CAPÍTULO 4 ====================
+\chapter{Unidad IV: Funciones Vectoriales y Cálculo Vectorial}
+
+Las funciones vectoriales constituyen una extensión fundamental del cálculo hacia el análisis de curvas y trayectorias en el espacio. A diferencia de las funciones escalares tradicionales, las funciones vectoriales asignan un vector a cada valor del parámetro, permitiendo describir movimientos, flujos y campos de manera precisa y elegante.
+
+En el contexto de la ingeniería, estas funciones son esenciales para modelar trayectorias de partículas, diseñar curvas en sistemas CAD, analizar campos electromagnéticos y resolver problemas de mecánica de fluidos. Este marco teórico es fundamental para la descripción del movimiento en el espacio y el análisis de campos de fuerza. Este capítulo explora los conceptos fundamentales de las funciones vectoriales, sus propiedades matemáticas, el cálculo diferencial e integral aplicado a ellas, y sus múltiples aplicaciones en ciencia e ingeniería.
+
+\section{Funciones Vectoriales}
+
+Una función vectorial es aquella cuyo dominio es un conjunto de números reales y cuyo rango es un conjunto de vectores. Estas funciones permiten describir curvas en el plano y en el espacio tridimensional mediante un único parámetro.
+
+\subsection{Definición, Dominio y Representación}
+
+Una \textbf{función vectorial} es una función cuyo dominio es un conjunto de números reales y cuyo rango es un conjunto de vectores. Se denota comúnmente como $\mathbf{r}(t)$. En el espacio tridimensional, una función vectorial se expresa mediante sus funciones componentes $f(t)$, $g(t)$ y $h(t)$, que son funciones escalares de valor real:
+
+\begin{equation}
+    \mathbf{r}(t) = f(t)\mathbf{i} + g(t)\mathbf{j} + h(t)\mathbf{k} = \langle f(t), g(t), h(t) \rangle
+    \label{eq:funcion_vectorial}
+\end{equation}
+
+El \textbf{dominio} de $\mathbf{r}$ consiste en todos los valores de $t$ para los cuales todas las funciones componentes $f$, $g$ y $h$ están definidas simultáneamente:
+
+\begin{equation}
+    \text{Dom}(\mathbf{r}) = \text{Dom}(f) \cap \text{Dom}(g) \cap \text{Dom}(h)
+    \label{eq:dominio_vectorial}
+\end{equation}
+
+Geométricamente, el conjunto de todos los puntos $(x, y, z)$ en el espacio definidos por $x=f(t)$, $y=g(t)$ y $z=h(t)$ forma una \textbf{curva espacial} $C$. La variable $t$ se denomina \textit{parámetro} y determina la \textit{orientación} de la curva (el sentido en que se traza a medida que $t$ aumenta).
+
+\subsection{Ejercicios: Determinación de Dominio}
+
+\textbf{Ejercicio 1.} Determinar el dominio de la función vectorial $\mathbf{r}(t) = \sqrt{4-t^2}\,\mathbf{i} + e^{-3t}\,\mathbf{j} + \ln(t+1)\,\mathbf{k}$.
+
+\textit{Solución:}
+
+Analizamos el dominio de cada componente por separado:
+\begin{enumerate}
+    \item \textbf{Componente $\mathbf{i}$:} $f(t) = \sqrt{4-t^2}$. Para que la raíz sea real:
+    \[ 4 - t^2 \ge 0 \implies t^2 \le 4 \implies -2 \le t \le 2 \]
+    \[ \text{Dom}(f) = [-2, 2] \]
+    
+    \item \textbf{Componente $\mathbf{j}$:} $g(t) = e^{-3t}$. La exponencial existe en todos los reales:
+    \[ \text{Dom}(g) = (-\infty, \infty) \]
+    
+    \item \textbf{Componente $\mathbf{k}$:} $h(t) = \ln(t+1)$. El argumento debe ser positivo:
+    \[ t + 1 > 0 \implies t > -1 \]
+    \[ \text{Dom}(h) = (-1, \infty) \]
+\end{enumerate}
+
+La intersección de los tres intervalos es:
+\[ \text{Dom}(\mathbf{r}) = (-1, 2] \]
+
+\subsection{Límites y Continuidad}
+
+El límite de una función vectorial se define tomando los límites de sus funciones componentes. Si $\mathbf{r}(t) = \langle f(t), g(t), h(t) \rangle$, entonces:
+
+\begin{equation}
+    \lim_{t \to a} \mathbf{r}(t) = \left\langle \lim_{t \to a} f(t), \lim_{t \to a} g(t), \lim_{t \to a} h(t) \right\rangle
+    \label{eq:limite_vectorial}
+\end{equation}
+
+siempre que existan los límites de las funciones componentes.
+
+Una función vectorial $\mathbf{r}$ es \textbf{continua} en un punto $a$ si se cumple que:
+\[ \lim_{t \to a} \mathbf{r}(t) = \mathbf{r}(a) \]
+
+Intuitivamente, esto significa que la curva no tiene roturas ni saltos en ese punto.
+
+\subsection{Ejercicios: Cálculo de Límites}
+
+\textbf{Ejercicio 2.} Calcular el límite $\lim_{t \to 0} \left( \frac{\sin t}{t}\,\mathbf{i} + (t^2-3)\,\mathbf{j} + \frac{e^t - 1}{t}\,\mathbf{k} \right)$.
+
+\textit{Solución:}
+
+Calculamos el límite componente a componente:
+\begin{itemize}
+    \item Componente $\mathbf{i}$: $\lim_{t \to 0} \frac{\sin t}{t} = 1$ (Límite notable).
+    \item Componente $\mathbf{j}$: $\lim_{t \to 0} (t^2 - 3) = -3$.
+    \item Componente $\mathbf{k}$: Aplicando la Regla de L'Hôpital:
+    \[ \lim_{t \to 0} \frac{e^t - 1}{t} = \lim_{t \to 0} \frac{e^t}{1} = 1 \]
+\end{itemize}
+
+Por lo tanto:
+\[ \lim_{t \to 0} \mathbf{r}(t) = \langle 1, -3, 1 \rangle \]
+
+\section{Ecuaciones Paramétricas}
+
+Las ecuaciones paramétricas constituyen una herramienta fundamental para representar curvas en el plano y en el espacio. En lugar de expresar una variable en función de otra directamente, se expresan todas las coordenadas en función de un parámetro auxiliar.
+
+\subsection{Parametrización y Curvas Planas}
+
+Las ecuaciones paramétricas permiten representar curvas mediante una variable auxiliar $t$. En el plano, una curva $C$ se define por $x = f(t)$ y $y = g(t)$, donde $t$ varía en un intervalo $I$:
+
+\begin{equation}
+    x = f(t), \quad y = g(t), \quad t \in [a, b]
+    \label{eq:parametricas_plano}
+\end{equation}
+
+Esta representación tiene ventajas sobre la cartesiana $y=f(x)$ ya que permite describir curvas que no son funciones (como circunferencias o espirales) y define inherentemente una dirección de movimiento.
+
+\subsection{Eliminación del Parámetro}
+
+Una técnica común para identificar la gráfica es la \textbf{eliminación del parámetro} para obtener la ecuación rectangular. Esto consiste en despejar el parámetro de una ecuación y sustituirlo en la otra, o usar identidades matemáticas apropiadas. Sin embargo, esto a veces pierde la información sobre la orientación o restringe el dominio original.
+
+\subsection{Ejercicios: Eliminación del Parámetro}
+
+\textbf{Ejercicio 3.} Dadas $x = 2\cos \theta$ y $y = 3\sin \theta$ ($0 \le \theta \le 2\pi$), hallar la ecuación cartesiana.
+
+\textit{Solución:}
+
+\begin{enumerate}
+    \item Despejamos las funciones trigonométricas: $\frac{x}{2} = \cos \theta$, $\frac{y}{3} = \sin \theta$.
+    \item Usamos la identidad $\sin^2 \theta + \cos^2 \theta = 1$:
+    \[ \left(\frac{x}{2}\right)^2 + \left(\frac{y}{3}\right)^2 = 1 \implies \frac{x^2}{4} + \frac{y^2}{9} = 1 \]
+\end{enumerate}
+
+Es una elipse con centro en el origen, eje mayor vertical de longitud 6 y eje menor horizontal de longitud 4.
+
+\subsection{Cálculo en Curvas Paramétricas}
+
+Dada una curva definida paramétricamente por $x=f(t)$ y $y=g(t)$, podemos aplicar el cálculo sin necesidad de eliminar el parámetro:
+
+\begin{itemize}
+    \item \textbf{Pendiente de la tangente:} Se aplica la regla de la cadena.
+    \begin{equation}
+        \frac{dy}{dx} = \frac{dy/dt}{dx/dt}, \quad \text{si } \frac{dx}{dt} \neq 0
+        \label{eq:derivada_parametrica}
+    \end{equation}
+    
+    \item \textbf{Concavidad (Segunda derivada):}
+    \begin{equation}
+        \frac{d^2y}{dx^2} = \frac{\frac{d}{dt}\left(\frac{dy}{dx}\right)}{\frac{dx}{dt}}
+        \label{eq:segunda_derivada_parametrica}
+    \end{equation}
+    
+    \item \textbf{Longitud de Arco:} Si $f'$ y $g'$ son continuas en $[a,b]$ y la curva no se interseca a sí misma, la longitud $L$ es:
+    \begin{equation}
+        L = \int_a^b \sqrt{\left(\frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2} \, dt
+        \label{eq:longitud_arco}
+    \end{equation}
+\end{itemize}
+
+\subsection{Ejercicios: Recta Tangente}
+
+\textbf{Ejercicio 4.} Hallar la ecuación de la recta tangente a la curva $x = t^2$, $y = t^3 - 3t$ en $t = 2$.
+
+\textit{Solución:}
+
+\begin{enumerate}
+    \item Punto de tangencia en $t=2$: $x_1 = (2)^2 = 4$, $y_1 = (2)^3 - 3(2) = 8 - 6 = 2$. Punto $(4, 2)$.
+    \item Derivadas: $\frac{dx}{dt} = 2t$, $\frac{dy}{dt} = 3t^2 - 3$.
+    \item Pendiente $m$ en $t = 2$:
+    \[ m = \frac{3(2)^2 - 3}{2(2)} = \frac{12 - 3}{4} = \frac{9}{4} \]
+    \item Ecuación punto-pendiente: $y - 2 = \frac{9}{4}(x - 4)$.
+\end{enumerate}
+
+La ecuación de la recta tangente es: $y = \frac{9}{4}x - 7$.
+
+\section{Derivación e Integración de Funciones Vectoriales}
+
+El cálculo diferencial e integral se extiende naturalmente a las funciones vectoriales, operando componente a componente. Estas operaciones tienen importantes interpretaciones geométricas y físicas.
+
+\subsection{Derivada de una Función Vectorial}
+
+La derivada de una función vectorial se define como el límite del cociente incremental:
+
+\begin{equation}
+    \mathbf{r}'(t) = \lim_{\Delta t \to 0} \frac{\mathbf{r}(t+\Delta t) - \mathbf{r}(t)}{\Delta t}
+    \label{eq:definicion_derivada_vectorial}
+\end{equation}
+
+Si $\mathbf{r}(t) = \langle f(t), g(t), h(t) \rangle$ y las funciones componentes son diferenciables, entonces:
+
+\begin{equation}
+    \mathbf{r}'(t) = \langle f'(t), g'(t), h'(t) \rangle
+    \label{eq:derivada_vectorial}
+\end{equation}
+
+Si $\mathbf{r}'(t)$ existe y es distinta de cero, representa el \textbf{vector tangente} a la curva en el punto $P(t)$ y apunta en la dirección de la orientación de la curva. Si $\mathbf{r}(t)$ representa la posición de una partícula, $\mathbf{r}'(t)$ es el vector velocidad $\mathbf{v}(t)$.
+
+\subsection{Propiedades de la Derivada Vectorial}
+
+Sean $\mathbf{u}(t)$ y $\mathbf{v}(t)$ funciones vectoriales diferenciables, $c$ un escalar y $f(t)$ una función real:
+
+\begin{enumerate}
+    \item $\frac{d}{dt}[c\mathbf{u}(t)] = c\mathbf{u}'(t)$
+    \item $\frac{d}{dt}[\mathbf{u}(t) \pm \mathbf{v}(t)] = \mathbf{u}'(t) \pm \mathbf{v}'(t)$
+    \item $\frac{d}{dt}[f(t)\mathbf{u}(t)] = f'(t)\mathbf{u}(t) + f(t)\mathbf{u}'(t)$
+    \item $\frac{d}{dt}[\mathbf{u}(t) \cdot \mathbf{v}(t)] = \mathbf{u}'(t) \cdot \mathbf{v}(t) + \mathbf{u}(t) \cdot \mathbf{v}'(t)$ (Regla del producto punto)
+    \item $\frac{d}{dt}[\mathbf{u}(t) \times \mathbf{v}(t)] = \mathbf{u}'(t) \times \mathbf{v}(t) + \mathbf{u}(t) \times \mathbf{v}'(t)$ (Regla del producto cruz)
+\end{enumerate}
+
+\subsection{Vector Tangente Unitario}
+
+El \textbf{vector tangente unitario} $\mathbf{T}(t)$ normaliza la dirección del movimiento:
+
+\begin{equation}
+    \mathbf{T}(t) = \frac{\mathbf{r}'(t)}{||\mathbf{r}'(t)||}, \quad \text{si } ||\mathbf{r}'(t)|| \neq 0
+    \label{eq:tangente_unitario}
+\end{equation}
+
+\subsection{Integral de una Función Vectorial}
+
+La integral de una función vectorial se calcula integrando cada componente:
+
+\begin{equation}
+    \int \mathbf{r}(t)\, dt = \left\langle \int f(t)\, dt, \int g(t)\, dt, \int h(t)\, dt \right\rangle
+    \label{eq:integral_vectorial}
+\end{equation}
+
+\subsection{Ejercicios: Cálculo Vectorial}
+
+\textbf{Ejercicio 5.} Hallar el vector tangente unitario $\mathbf{T}(t)$ para $\mathbf{r}(t) = \cos t \,\mathbf{i} + \sin t \,\mathbf{j} + t \,\mathbf{k}$ en $t = \pi/2$.
+
+\textit{Solución:}
+
+\begin{enumerate}
+    \item Derivada: $\mathbf{r}'(t) = \langle -\sin t, \cos t, 1 \rangle$.
+    \item En $t = \pi/2$: $\mathbf{r}'(\pi/2) = \langle -\sin(\pi/2), \cos(\pi/2), 1 \rangle = \langle -1, 0, 1 \rangle$.
+    \item Magnitud: $||\mathbf{r}'(\pi/2)|| = \sqrt{(-1)^2 + 0^2 + 1^2} = \sqrt{2}$.
+    \item Vector tangente unitario:
+    \[ \mathbf{T}(\pi/2) = \frac{\langle -1, 0, 1 \rangle}{\sqrt{2}} = \left\langle -\frac{1}{\sqrt{2}}, 0, \frac{1}{\sqrt{2}} \right\rangle \]
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\textbf{Ejercicio 6.} Calcular $\int_{0}^{1} (2t \,\mathbf{i} + 4t^3 \,\mathbf{j} + e^t \,\mathbf{k}) \, dt$.
+
+\textit{Solución:}
+
+Integramos componente a componente:
+\begin{itemize}
+    \item Componente $\mathbf{i}$: $\int_{0}^{1} 2t \, dt = [t^2]_0^1 = 1$
+    \item Componente $\mathbf{j}$: $\int_{0}^{1} 4t^3 \, dt = [t^4]_0^1 = 1$
+    \item Componente $\mathbf{k}$: $\int_{0}^{1} e^t \, dt = [e^t]_0^1 = e - 1$
+\end{itemize}
+
+Por lo tanto:
+\[ \int_{0}^{1} \mathbf{r}(t) \, dt = 1\mathbf{i} + 1\mathbf{j} + (e-1)\mathbf{k} = \langle 1, 1, e-1 \rangle \]
+
+\section{Integrales de Línea}
+
+La \textbf{integral de línea} generaliza la integral definida simple $\int_a^b f(x)dx$. En lugar de integrar sobre un intervalo en el eje $x$, integramos sobre una curva $C$ en el plano o el espacio. Las integrales de línea son fundamentales en física e ingeniería para calcular trabajo, circulación y flujo.
+
+\subsection{Integral de Línea de un Campo Escalar}
+
+Si $f(x,y,z)$ es una función continua definida en una curva suave $C$ dada por $\mathbf{r}(t)$, la integral de línea es:
+
+\begin{equation}
+    \int_C f(x,y,z) \, ds = \int_a^b f(x(t), y(t), z(t)) \, ||\mathbf{r}'(t)|| \, dt
+    \label{eq:integral_linea_escalar}
+\end{equation}
+
+donde $ds$ representa el elemento de longitud de arco. Físicamente, si $\rho(x,y,z)$ representa la densidad lineal de un alambre con la forma de la curva $C$, esta integral calcula la \textbf{masa total} del alambre.
+
+\subsection{Integral de Línea de un Campo Vectorial (Trabajo)}
+
+Sea $\mathbf{F}$ un campo vectorial de fuerza continuo definido sobre una curva suave $C$. El trabajo realizado por $\mathbf{F}$ para mover una partícula a lo largo de $C$ es:
+
+\begin{equation}
+    W = \int_C \mathbf{F} \cdot d\mathbf{r} = \int_a^b \mathbf{F}(\mathbf{r}(t)) \cdot \mathbf{r}'(t) \, dt
+    \label{eq:integral_linea_vectorial}
+\end{equation}
+
+\subsection{Independencia de la Trayectoria}
+
+Una propiedad importante es la \textbf{independencia de la trayectoria}. Si $\mathbf{F}$ es un \textit{campo conservativo} (es decir, $\mathbf{F} = \nabla f$ para alguna función potencial $f$), entonces la integral de línea depende solo de los puntos inicial y final, y es cero para cualquier trayectoria cerrada simple.
+
+\subsection{Ejercicios: Integrales de Línea}
+
+\textbf{Ejercicio 7.} Evaluar $\int_C 2xy \, ds$ sobre $C: x = \cos t, y = \sin t$ para $t \in [0, \pi/2]$ (primer cuadrante).
+
+\textit{Solución:}
+
+\begin{enumerate}
+    \item Calculamos el diferencial de arco:
+    \[ ds = \sqrt{\left(\frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2} \, dt = \sqrt{(-\sin t)^2 + (\cos t)^2} \, dt = \sqrt{\sin^2 t + \cos^2 t} \, dt = 1 \, dt \]
+    
+    \item Sustituimos en la integral:
+    \[ \int_C 2xy \, ds = \int_{0}^{\pi/2} 2(\cos t)(\sin t) \cdot 1 \, dt = \int_{0}^{\pi/2} \sin(2t) \, dt \]
+    
+    \item Evaluamos:
+    \[ \left[-\frac{1}{2}\cos(2t)\right]_0^{\pi/2} = -\frac{1}{2}\cos(\pi) + \frac{1}{2}\cos(0) = -\frac{1}{2}(-1) + \frac{1}{2}(1) = \frac{1}{2} + \frac{1}{2} = 1 \]
+\end{enumerate}
+
+El valor de la integral es $1$.
+
+\vspace{0.5cm}
+
+\textbf{Ejercicio 8.} Calcular el trabajo realizado por el campo de fuerza $\mathbf{F} = \langle y, -x \rangle$ sobre una partícula que se mueve a lo largo de la curva $\mathbf{r}(t) = \langle t, t^2 \rangle$ para $t \in [0, 1]$.
+
+\textit{Solución:}
+
+\begin{enumerate}
+    \item Evaluamos el campo en la curva: $\mathbf{F}(\mathbf{r}(t)) = \langle t^2, -t \rangle$.
+    \item Calculamos la derivada de la curva: $\mathbf{r}'(t) = \langle 1, 2t \rangle$.
+    \item Calculamos el producto punto:
+    \[ \mathbf{F}(\mathbf{r}(t)) \cdot \mathbf{r}'(t) = (t^2)(1) + (-t)(2t) = t^2 - 2t^2 = -t^2 \]
+    \item Evaluamos la integral:
+    \[ W = \int_0^1 -t^2 \, dt = \left[-\frac{t^3}{3}\right]_0^1 = -\frac{1}{3} - 0 = -\frac{1}{3} \]
+\end{enumerate}
+
+El trabajo realizado es $W = -\frac{1}{3}$ unidades. El signo negativo indica que el campo de fuerza realiza trabajo negativo (opuesto al movimiento) sobre la partícula.
+
 % ==================== REFERENCIAS ====================
 \begin{thebibliography}{99}
 
@@ -3112,6 +3416,15 @@ Wikipedia. (2025). Límite (matemáticas). En \textit{Wikipedia: La enciclopedia
 
 \bibitem{thomas2018}
 Thomas, G. B., Weir, M. D., Hass, J., \& Giordano, F. R. (2018). \textit{Thomas' Calculus} (14ª ed.). Pearson Education.
+
+\bibitem{larson2018}
+Larson, R., \& Edwards, B. H. (2018). \textit{Calculus} (11th ed.). Cengage Learning.
+
+\bibitem{stewart2020}
+Stewart, J. (2020). \textit{Calculus: Early Transcendentals} (9th ed.). Cengage Learning.
+
+\bibitem{zill2011}
+Zill, D. G., \& Wright, W. S. (2011). \textit{Calculus: Early Transcendentals} (4th ed.). Jones \& Bartlett Learning.
 
 \end{thebibliography}
 
