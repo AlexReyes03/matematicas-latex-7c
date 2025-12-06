@@ -48,11 +48,14 @@
 % ==================== INFORMACIÓN DEL DOCUMENTO ====================
 \title{Investigación de Matemáticas para la Ingeniería I}
 \author{
-    Isael Alejandro Reyes Vargas \\
-    Jafet Bahena González \\
-    Danna Paola Sánchez Martínez \\
-    Angel Gabriel Aguilar García \\
-    Loreley Carrillo Juárez
+    Aguilar García Angel Gabriel \\
+    Bahena González Jafet \\
+    Carrate Bahena Daniela \\
+    Carrillo Juárez Loreley \\
+    Reyes Vargas Isael Alejandro \\
+    Sánchez Martínez Danna Paola
+    
+    
 }
 \date{\today}
 
@@ -62,8 +65,20 @@
 % ==================== PORTADA ====================
 \begin{titlepage}
     \centering
-    \vspace*{1cm}
-    
+
+    % Logos en la parte superior
+    \begin{minipage}{0.4\textwidth}
+        \centering
+        \includegraphics[width=0.7\textwidth]{img/logo-utez.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.4\textwidth}
+        \centering
+        \includegraphics[width=0.7\textwidth]{img/logo-datid.png}
+    \end{minipage}
+
+    \vspace{1cm}
+
     {\Large\textbf{UNIVERSIDAD TECNOLÓGICA EMILIANO ZAPATA}}\\[0.5cm]
     {\large División Académica de Tecnologías de la Información y Diseño}\\[0.5cm]
     {\large Ingeniería en Desarrollo y Gestión de Software}\\[2cm]
@@ -82,15 +97,16 @@
             \textbf{Profesor:}\\
             M.C. Jorge Yusef Colin Castillo\\[0.5cm]
             
-            \textbf{Grupo:} 7 C\\[0.5cm]
+            \textbf{Grupo:} 7 C IDyGS\\[0.5cm]
             
             \textbf{Integrantes del Equipo:}\\
             \begin{itemize}[leftmargin=1cm]
-                \item Isael Alejandro Reyes Vargas
-                \item Jafet Bahena González
-                \item Danna Paola Sánchez Martínez
-                \item Angel Gabriel Aguilar García
-                \item Loreley Carrillo Juárez
+                \item Aguilar García Angel Gabriel
+                \item Bahena González Jafet
+                \item Carrate Bahena Daniela
+                \item Carrillo Juárez Loreley
+                \item Reyes Vargas Isael Alejandro
+                \item Sánchez Martínez Danna Paola
             \end{itemize}
         \end{flushleft}
     \end{minipage}
@@ -106,9 +122,6 @@
 \cleardoublepage 
 
 \listoffigures
-\cleardoublepage 
-
-\listoftables
 \cleardoublepage 
 
 % ==================== UNIDAD I ====================
@@ -233,6 +246,14 @@ A continuación se presentan ejercicios para identificar las variables dependien
     \item Variable dependiente: $t$
 \end{itemize}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/1_1_imagen_funciones.jpg}
+    \caption{Funciones}
+\end{figure}
+
+La gráfica muestra la función $f(x) = 0.5x^2 - 2$, una parábola suave donde para cada valor de entrada $x$ existe una única salida $y$. Este ejemplo ilustra el concepto fundamental de función: una relación que asigna a cada elemento del dominio exactamente un elemento del rango.
+
 \section{Dominio}
 
 El dominio de una función se refiere al conjunto de todos los valores posibles que pueden ser entradas válidas para la función. Dicho de otra manera, es el conjunto de valores que podemos sustituir en la variable independiente sin que se produzca una contradicción o un valor indefinido.
@@ -278,6 +299,14 @@ El dominio es $\{x \in \mathbb{R} \mid x > 0\}$, porque el argumento del logarit
 El dominio de una función compuesta $(f \circ g)(x) = f(g(x))$ es el conjunto de todos los valores $x$ para los cuales tanto $g(x)$ como $f(g(x))$ están definidos. Por ejemplo:
 
 Si $g(x) = \sqrt{x}$ y $f(x) = \frac{1}{x}$, entonces el dominio de $f \circ g$ es $\{x \in \mathbb{R} \mid x > 0\}$, ya que debe cumplirse $\sqrt{x} > 0$.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/1_2_imagen_dominio.jpg}
+    \caption{Dominio}
+\end{figure}
+
+La función $g(x) = \sqrt{x + 3}$ muestra una curva que inicia en $x = -3$, evidenciando visualmente la restricción del dominio. Para valores menores a $-3$, la función no está definida en los números reales, ya que la raíz cuadrada de un número negativo no existe en este conjunto.
 
 \section{Rango}
 
@@ -391,6 +420,14 @@ A continuación se presentan ejercicios para determinar el dominio y rango de di
     \item $\text{Ran}(f) = [0, \infty)$
 \end{itemize}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/1_3_imagen_rango.jpg}
+    \caption{Rango}
+\end{figure}
+
+La función $h(x) = 2\sin(x) + 1$ representa una onda oscilatoria acotada superior e inferiormente. El rango de esta función está restringido al intervalo $[-1, 3]$, donde $-1$ es el valor mínimo alcanzado cuando $\sin(x) = -1$ y $3$ es el valor máximo cuando $\sin(x) = 1$.
+
 \section{Funciones Explícitas}
 
 Una función explícita es aquella en la que la variable dependiente, generalmente representada por la letra $y$, se encuentra despejada y expresada de manera directa en términos de la variable independiente, que suele ser $x$. En este tipo de funciones, la relación se puede escribir de la forma $y = f(x)$, lo que significa que para cada valor de $x$ se puede calcular de manera inmediata un valor de $y$.
@@ -412,6 +449,14 @@ Las funciones explícitas se usan ampliamente en distintos campos del conocimien
 \end{itemize}
 
 Gracias a esta característica, su uso es esencial para el modelado computacional y la simulación de procesos.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/1_4_imagen_funciones_explicitas.jpg}
+    \caption{Funciones Explícitas}
+\end{figure}
+
+La función cúbica $p(x) = x^3 - 3x$ se presenta en su forma estándar $y = f(x)$, donde la variable dependiente $y$ está completamente despejada. Esta representación explícita permite calcular directamente el valor de $y$ para cualquier valor dado de $x$, facilitando el análisis y la graficación de la función.
 
 \section{Funciones Implícitas}
 
@@ -459,6 +504,14 @@ Existe un resultado fundamental relacionado con las funciones implícitas, conoc
 Si $F(x, y)$ es una función continua y diferenciable y se cumple que $F(a, b) = 0$ y que la derivada parcial de $F$ con respecto a $y$, es decir, $\frac{\partial F}{\partial y}(a, b)$, es distinta de cero, entonces existe una función diferenciable $y = g(x)$ definida en una vecindad del punto $(a, b)$ tal que $F(x, g(x)) = 0$.
 
 En términos sencillos, esto significa que, aunque globalmente no se pueda despejar $y$, en una región cercana a un punto particular sí puede comportarse como una función explícita. Este teorema es una de las herramientas más importantes en cálculo avanzado y análisis matemático, ya que permite estudiar relaciones complicadas sin necesidad de resolverlas completamente.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/1_5_imagen_funciones_implicitas.jpg}
+    \caption{Funciones Implícitas}
+\end{figure}
+
+La ecuación $x^2 + y^2 = 16$ define un círculo de radio 4 centrado en el origen, donde la variable $y$ no está despejada. Esta representación implícita no puede expresarse como una única función explícita $y = f(x)$, sino que requiere dos funciones: $y = \sqrt{16 - x^2}$ (semicírculo superior) y $y = -\sqrt{16 - x^2}$ (semicírculo inferior).
 
 \section{Curvas de Nivel}
 
@@ -577,6 +630,14 @@ $$\frac{x^2}{6} + \frac{y^2}{6} = 1$$
 $$\frac{x^2}{(\sqrt{6})^2} + \frac{y^2}{(\sqrt{6})^2} = 1$$
 
 Por lo tanto, $a = \sqrt{6} \approx 2.4$ y $b = \sqrt{6} \approx 2.4$. La curva de nivel es una circunferencia de radio $\sqrt{6}$.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/1_6_imagen_curvas_nivel.jpg}
+    \caption{Curvas de Nivel}
+\end{figure}
+
+Las curvas de nivel $x^2 + y^2 = 1$, $x^2 + y^2 = 4$ y $x^2 + y^2 = 9$ forman círculos concéntricos de radios 1, 2 y 3 respectivamente. Estas curvas representan cortes horizontales a diferentes alturas de una superficie tridimensional, como un cono o paraboloide, permitiendo visualizar funciones de dos variables en el plano.
 
 \section{Límites}
 
@@ -803,6 +864,14 @@ Multiplicamos por el conjugado:
 
 Evaluamos el límite:
 $$\lim_{x \to 0} \frac{-2}{\sqrt{4} + 2} = \frac{-2}{2 + 2} = -\frac{1}{2}$$
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/1_7_imagen_limites.jpg}
+    \caption{Límites}
+\end{figure}
+
+La función $q(x) = \frac{2x^2 + 1}{x^2}$ se acerca asintóticamente a la recta horizontal $y = 2$ cuando $x$ tiende al infinito. Este comportamiento ilustra el concepto de límite: $\lim_{x \to \infty} q(x) = 2$, mostrando cómo una función puede aproximarse indefinidamente a un valor sin necesariamente alcanzarlo.
 
 % ==================== UNIDAD II ====================
 \chapter{Unidad II: Derivadas Parciales}
@@ -1206,6 +1275,14 @@ u = 5x^2 + 3xy - y^3
 = 5(5x^2 + 3xy - y^3)^4 (3x - 3y^2)
 }
 \]
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/2_1_imagen_derivadas_primer_orden.jpg}
+    \caption{Derivadas Parciales de Primer Orden}
+\end{figure}
+
+La superficie $f(x,y) = x^2 - y^2$ forma una "silla de montar" (paraboloide hiperbólico) que muestra pendientes distintas según la dirección considerada. La derivada parcial $\frac{\partial f}{\partial x} = 2x$ mide la pendiente en la dirección $x$ (manteniendo $y$ constante), mientras que $\frac{\partial f}{\partial y} = -2y$ mide la pendiente en la dirección $y$ (manteniendo $x$ constante).
 
 \section{Derivadas Parciales de Segundo Orden}
 
@@ -2012,6 +2089,14 @@ Simplificando:
 }
 \]
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/2_2_imagen_derivadas_segundo_orden.jpg}
+    \caption{Derivadas Parciales de Segundo Orden}
+\end{figure}
+
+La función $g(x,y) = \sin(x) + \cos(y)$ genera una superficie tipo "caja de huevos" que permite visualizar concavidades y puntos de silla. Las derivadas parciales de segundo orden, como $\frac{\partial^2 f}{\partial x^2}$ y $\frac{\partial^2 f}{\partial y^2}$, determinan la curvatura de la superficie en diferentes direcciones, siendo fundamentales para identificar máximos, mínimos y puntos de silla.
+
 \section{Reglas de Derivación}
 
 Al calcular derivadas parciales, se aplican las mismas reglas fundamentales del cálculo de una variable, con la importante consideración de que todas las variables excepto aquella respecto a la cual se deriva deben tratarse como constantes.
@@ -2094,6 +2179,14 @@ Para el cociente de dos funciones $f(x, y) = \frac{u(x, y)}{v(x, y)}$, donde $v(
 \begin{align}
 \frac{\partial f}{\partial x} &= \frac{2x(x + y) - x^2 \cdot 1}{(x + y)^2} = \frac{2x^2 + 2xy - x^2}{(x + y)^2} = \frac{x^2 + 2xy}{(x + y)^2} \notag
 \end{align}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/2_3_imagen_reglas_derivacion.jpg}
+    \caption{Reglas de Derivación}
+\end{figure}
+
+La superficie compleja $h(x,y) = x \cdot e^{-x^2 - y^2}$ presenta picos y valles que requieren la aplicación combinada de la regla del producto y la regla de la cadena. Al calcular $\frac{\partial h}{\partial x}$, primero se aplica la regla del producto: $\frac{\partial}{\partial x}[x \cdot e^{-x^2 - y^2}] = e^{-x^2 - y^2} + x \cdot \frac{\partial}{\partial x}[e^{-x^2 - y^2}]$, y luego la regla de la cadena para la función exponencial.
 
 \section{Historia de las Derivadas Parciales}
 
@@ -2287,6 +2380,12 @@ En imagenología médica, las derivadas parciales se utilizan en algoritmos de r
 
 \subsection{Síntesis}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/2_5_imagen_aplicaciones_derivadas.jpg}
+    \caption{Aplicaciones de las Derivadas Parciales}
+\end{figure}
+
 Las aplicaciones de las derivadas parciales son prácticamente ilimitadas en la ciencia y la ingeniería modernas. Desde la predicción del clima hasta el diseño de chips de computadora, desde la optimización de carteras de inversión hasta el desarrollo de fármacos, las derivadas parciales proporcionan el lenguaje matemático necesario para describir, analizar y predecir el comportamiento de sistemas complejos que dependen de múltiples variables. Su dominio es esencial para cualquier profesional que trabaje con modelos matemáticos del mundo real.
 
 % ==================== UNIDAD III ====================
@@ -2432,6 +2531,14 @@ $$\frac{\sin(5 \cdot 0)}{5} = \frac{\sin(0)}{5} = \frac{0}{5} = 0$$
 Por lo tanto:
 $$0 - 0 = 0$$
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/3_1_imagen_integrales_definidas.jpg}
+    \caption{Integrales Definidas}
+\end{figure}
+
+La siguiente figura muestra $\int_{0}^{\pi} (\sin(x) + 2)\, dx$, representando el área sombreada bajo la curva seno desplazada entre $0$ y $\pi$. Este ejemplo ilustra cómo la integral definida calcula la acumulación neta de la función en un intervalo específico.
+
 \section{Integrales Indefinidas}
 
 La integral indefinida, también conocida como antiderivada o primitiva, representa el conjunto de todas las funciones cuya derivada es una función dada. A diferencia de la integral definida, que produce un número específico, la integral indefinida produce una familia de funciones.
@@ -2528,6 +2635,14 @@ Las integrales indefinidas son fundamentales para:
 
 \textit{Solución:}
 $$\int x^4\, dx = \frac{x^{4+1}}{4+1} + C = \frac{x^5}{5} + C$$
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/3_2_imagen_integrales_indefinidas.jpg}
+    \caption{Integrales Indefinidas}
+\end{figure}
+
+La figura muestra la familia de funciones $f(x) = x^2 + k$ para $k \in \{-3, -2, -1, 0, 1, 2, 3\}$, representando parábolas desplazadas verticalmente. Cada curva corresponde a una antiderivada diferente de $f'(x) = 2x$, ilustrando la constante de integración $C$ en las integrales indefinidas.
 
 \section{Integrales por Partes}
 
@@ -2749,6 +2864,14 @@ $$5I = -e^{-x} \cos(2x) + 2e^{-x} \sin(2x)$$
 
 $$I = \frac{e^{-x}}{5} \left[2\sin(2x) - \cos(2x)\right] + C$$
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/3_3_imagen_integrales_por_partes.jpg}
+    \caption{Integrales por Partes}
+\end{figure}
+
+La gráfica muestra la función $f(x) = x \ln(x)$, un ejemplo clásico que requiere el método de integración por partes. Esta técnica es esencial cuando el integrando es un producto de funciones donde ni la sustitución directa ni las fórmulas básicas son suficientes.
+
 \section{Integrales Dobles}
 
 Las integrales dobles extienden el concepto de integración a funciones de dos variables, permitiendo calcular volúmenes bajo superficies, áreas de regiones planas, masas de láminas con densidad variable y otros problemas en dos dimensiones.
@@ -2932,6 +3055,14 @@ $$\int_{0}^{1} \frac{1}{2} \sin(2y) (e^{2\sqrt{y}} - 1)\, dy = \frac{1}{2} \int_
 La segunda integral:
 $$\frac{1}{2} \int_{0}^{1} \sin(2y)\, dy = \frac{1}{2} \left[ -\frac{1}{2} \cos(2y) \right]_{0}^{1} = \frac{1}{4} (1 - \cos(2)) \approx 0.25$$
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/3_4_imagen_integrales_dobles.jpg}
+    \caption{Integrales Dobles}
+\end{figure}
+
+La superficie tridimensional muestra $z = 4 - x^2$, formando un túnel parabólico. Las integrales dobles permiten calcular el volumen bajo esta superficie sobre una región específica del plano $xy$, extendiendo el concepto de área bajo la curva a dimensiones superiores.
+
 \section{Integrales Triples}
 
 Las integrales triples extienden el concepto de integración a funciones de tres variables, permitiendo calcular volúmenes de regiones en el espacio tridimensional, masas de sólidos con densidad variable y otras cantidades físicas en tres dimensiones.
@@ -3068,6 +3199,14 @@ Las integrales triples tienen aplicaciones fundamentales:
     \item \textbf{Probabilidad:} Funciones de densidad de probabilidad para tres variables aleatorias continuas.
 \end{itemize}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/3_5_imagen_integrales_triples.jpg}
+    \caption{Integrales Triples}
+\end{figure}
+
+La esfera sólida definida por $x^2 + y^2 + z^2 = 25$ representa una región común de integración triple. Este tipo de integrales se utiliza para calcular volúmenes, masas y otras propiedades físicas de sólidos tridimensionales con densidades variables.
+
 % ==================== CAPÍTULO 4 ====================
 \chapter{Unidad IV: Funciones Vectoriales y Cálculo Vectorial}
 
@@ -3153,6 +3292,14 @@ Calculamos el límite componente a componente:
 Por lo tanto:
 \[ \lim_{t \to 0} \mathbf{r}(t) = \langle 1, -3, 1 \rangle \]
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/4_1_imagen_funciones_vectoriales.jpg}
+    \caption{Funciones Vectoriales}
+\end{figure}
+
+La hélice tridimensional muestra la curva paramétrica $\mathbf{r}(t) = (3\cos(t), 3\sin(t), t)$ para $t \in [0, 4\pi]$. Esta función vectorial describe un resorte que asciende uniformemente mientras gira alrededor del eje $z$, combinando movimiento circular en el plano $xy$ con desplazamiento vertical.
+
 \section{Ecuaciones Paramétricas}
 
 Las ecuaciones paramétricas constituyen una herramienta fundamental para representar curvas en el plano y en el espacio. En lugar de expresar una variable en función de otra directamente, se expresan todas las coordenadas en función de un parámetro auxiliar.
@@ -3225,6 +3372,14 @@ Dada una curva definida paramétricamente por $x=f(t)$ y $y=g(t)$, podemos aplic
 \end{enumerate}
 
 La ecuación de la recta tangente es: $y = \frac{9}{4}x - 7$.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/4_2_imagen_ecuaciones_parametricas.jpg}
+    \caption{Ecuaciones Paramétricas}
+\end{figure}
+
+La trayectoria cerrada muestra la curva paramétrica $x = \sin(t) - \sin(2t)$, $y = \cos(t)$ para $t \in [0, 2\pi]$. Las ecuaciones paramétricas permiten describir curvas complejas que serían difíciles o imposibles de expresar como funciones explícitas $y = f(x)$.
 
 \section{Derivación e Integración de Funciones Vectoriales}
 
@@ -3308,6 +3463,14 @@ Integramos componente a componente:
 Por lo tanto:
 \[ \int_{0}^{1} \mathbf{r}(t) \, dt = 1\mathbf{i} + 1\mathbf{j} + (e-1)\mathbf{k} = \langle 1, 1, e-1 \rangle \]
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/4_3_imagen_derivacion_vectorial.jpg}
+    \caption{Derivación e Integración de Funciones Vectoriales}
+\end{figure}
+
+La parábola muestra la curva $\mathbf{c}(t) = (t, t^2, 0)$ para $t \in [-2, 2]$ junto con un vector tangente. La derivada de una función vectorial $\mathbf{r}'(t)$ proporciona el vector velocidad, indicando la dirección y magnitud del movimiento instantáneo a lo largo de la trayectoria.
+
 \section{Integrales de Línea}
 
 La \textbf{integral de línea} generaliza la integral definida simple $\int_a^b f(x)dx$. En lugar de integrar sobre un intervalo en el eje $x$, integramos sobre una curva $C$ en el plano o el espacio. Las integrales de línea son fundamentales en física e ingeniería para calcular trabajo, circulación y flujo.
@@ -3371,6 +3534,14 @@ El valor de la integral es $1$.
 \end{enumerate}
 
 El trabajo realizado es $W = -\frac{1}{3}$ unidades. El signo negativo indica que el campo de fuerza realiza trabajo negativo (opuesto al movimiento) sobre la partícula.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/4_4_imagen_integrales_linea.jpg}
+    \caption{Integrales de Línea}
+\end{figure}
+
+El campo vectorial muestra $\mathbf{F}(x,y) = (-y/3, x/3)$ representado por flechas, atravesado por una trayectoria curva. Las integrales de línea calculan el trabajo realizado por un campo de fuerzas a lo largo de una curva, siendo fundamentales en física e ingeniería para modelar trabajo, flujo y circulación.
 
 % ==================== REFERENCIAS ====================
 \begin{thebibliography}{99}
